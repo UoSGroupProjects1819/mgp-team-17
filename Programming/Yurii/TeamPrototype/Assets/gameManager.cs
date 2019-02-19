@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEditor.SceneManagement;
 
 public class gameManager : MonoBehaviour
 {
@@ -22,8 +23,8 @@ public class gameManager : MonoBehaviour
         SetTimerText();
         if (timeLeft < 0)
         {
-            Debug.Log("gameover");
-            timeLeft = 1;
+            EditorSceneManager.LoadScene(EditorSceneManager.GetActiveScene().buildIndex);
+            
         }
     }
 
