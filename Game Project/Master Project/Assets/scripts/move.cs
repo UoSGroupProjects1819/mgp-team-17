@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class move : MonoBehaviour
 {
@@ -13,12 +14,16 @@ public class move : MonoBehaviour
     bool disableA = false;
     bool disableS = false;
     bool disableD = false;
+    private int count;
+    public Text countText;
 
     void Start()
     {
         
         ableToMove = true;
-       
+        count = 0;
+        SetCountText();
+
     }
 
     // Update is called once per frame
@@ -92,6 +97,23 @@ public class move : MonoBehaviour
         }
         else
             Debug.Log("can't move");
+
+    }
+
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("pickUp"))
+        {
+            other.gameObject.SetActive(false);
+            count += 1;
+            SetCountText();
+        }
+    }
+
+    void SetCountText()
+    {
+        countText.text = "Count: " + count.ToString();
 
     }
 }
