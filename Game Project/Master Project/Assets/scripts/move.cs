@@ -14,14 +14,14 @@ public class move : MonoBehaviour
     bool disableA = false;
     bool disableS = false;
     bool disableD = false;
-    private int count;
-    public Text countText;
+    private int countKeys;
+    public Text countKeysText;
 
     void Start()
     {
         
         ableToMove = true;
-        count = 0;
+        countKeys = 0;
         SetCountText();
 
     }
@@ -106,14 +106,14 @@ public class move : MonoBehaviour
         if (other.gameObject.CompareTag("pickUp"))
         {
             other.gameObject.SetActive(false);
-            count += 1;
+            countKeys += 1;
             SetCountText();
         }
     }
 
     void SetCountText()
     {
-        countText.text = "Count: " + count.ToString();
+        countKeysText.text = "Count: " + countKeys.ToString();
 
     }
 }

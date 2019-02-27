@@ -35,4 +35,10 @@ public class gameManager : MonoBehaviour
 
     }
     //int myBlubb = (int)myFloatBlubb;
+
+
+    void QuitButton()
+    {
+        SceneManager.LoadScene("0");
+    }
 }
