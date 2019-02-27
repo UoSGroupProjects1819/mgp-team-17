@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class gameManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
 
     public float timeLeft = 180f;
@@ -37,8 +37,5 @@ public class gameManager : MonoBehaviour
     //int myBlubb = (int)myFloatBlubb;
 
 
-    void QuitButton()
-    {
-        SceneManager.LoadScene("0");
-    }
+    
 }

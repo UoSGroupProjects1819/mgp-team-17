@@ -16,9 +16,9 @@ public class LoadNextLevel : MonoBehaviour
     {
         
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "player")
+        if (collision.gameObject.CompareTag("Player"))
         {
 
             SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex+1 );

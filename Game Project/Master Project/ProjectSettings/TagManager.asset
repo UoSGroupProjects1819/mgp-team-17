@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MoveWall
   - pickUp
+  - Key
   layers:
   - Default
   - TransparentFX

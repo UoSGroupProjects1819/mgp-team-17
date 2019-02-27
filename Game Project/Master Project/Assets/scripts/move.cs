@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class move : MonoBehaviour
 {
 
     // Use this for initialization
     public Rigidbody2D rb;
-    public float thrust;
+    public float thrust = 200f;
     public bool ableToMove;
     bool disableW = false;
     bool disableA = false;
@@ -103,7 +104,7 @@ public class move : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("pickUp"))
+        if (other.gameObject.CompareTag("Key"))
         {
             other.gameObject.SetActive(false);
             countKeys += 1;
@@ -113,7 +114,9 @@ public class move : MonoBehaviour
 
     void SetCountText()
     {
-        countKeysText.text = "Count: " + countKeys.ToString();
+        countKeysText.text = "Keys: " + countKeys.ToString();
 
     }
+
+    
 }
