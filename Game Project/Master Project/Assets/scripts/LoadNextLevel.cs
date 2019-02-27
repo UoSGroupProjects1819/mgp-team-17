@@ -15,6 +15,6 @@ public class LoadNextLevel : MonoBehaviour
             Debug.Log("boye");
         }
 
-
+        
     }
 }
