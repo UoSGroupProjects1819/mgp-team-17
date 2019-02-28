@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class GetNextLevelDoor : MonoBehaviour
 {
-    public Transform key;
+    public GameObject key;
+    public GameObject wallToDestroy;
+    public Vector3 NextLevelDoorCoords;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,8 @@ public class GetNextLevelDoor : MonoBehaviour
         if (collision.gameObject.name == "player")
         {
 
-            Instantiate(key, new Vector3(20, 5, 0), Quaternion.identity);
+            Instantiate(key, NextLevelDoorCoords, Quaternion.identity);
+            Destroy(wallToDestroy);
         }
 
 

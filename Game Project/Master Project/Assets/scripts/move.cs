@@ -16,6 +16,7 @@ public class move : MonoBehaviour
     bool disableS = false;
     bool disableD = false;
     private int countKeys;
+    public int points=0;
     public Text countKeysText;
 
     void Start()
@@ -23,7 +24,7 @@ public class move : MonoBehaviour
         
         ableToMove = true;
         countKeys = 0;
-        SetCountText();
+        //SetCountText();
 
     }
 
@@ -97,26 +98,47 @@ public class move : MonoBehaviour
 
         }
         else
-            Debug.Log("can't move");
+            
+            Debug.Log("");
 
     }
 
-
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.gameObject.CompareTag("Key"))
+        if (collision.gameObject.CompareTag("coin"))
         {
-            other.gameObject.SetActive(false);
-            countKeys += 1;
-            SetCountText();
+
+            points += 110;
+            //Destroy(collision.gameObject);
+            Debug.Log("sad");
+            Destroy(collision.gameObject);
+            ableToMove = true;
+            disableA = false;
+            disableW = false;
+            disableS = false;
+            disableD = false;
+
         }
-    }
+        
 
-    void SetCountText()
-    {
-        countKeysText.text = "Keys: " + countKeys.ToString();
 
     }
+
+    //void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.gameObject.CompareTag("Key"))
+    //    {
+    //        other.gameObject.SetActive(false);
+    //        countKeys += 1;
+    //        SetCountText();
+    //    }
+    //}
+
+    //void SetCountText()
+    //{
+    //    countKeysText.text = "Keys: " + countKeys.ToString();
+
+    //}
 
     
 }

@@ -7,6 +7,8 @@ TagManager:
   - MoveWall
   - pickUp
   - Key
+  - coin
+  - wall
   layers:
   - Default
   - TransparentFX
