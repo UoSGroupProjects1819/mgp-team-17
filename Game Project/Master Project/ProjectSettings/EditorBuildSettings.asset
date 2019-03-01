@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MasterLvls/Menu.unity
-    guid: 181b51a0f6712884c98351780b957c85
+    path: Assets/Scenes/Lukes Levels Using Prefabs/Menu.unity
+    guid: 002a62afb67a31741a3691a5690dc421
   - enabled: 1
-    path: Assets/Scenes/MasterLvls/Tutorial.unity
-    guid: d17cc0e66421bee43a7891c704b039f7
+    path: Assets/Scenes/Lukes Levels Using Prefabs/Tutorial.unity
+    guid: 7c14926aee8e31e478230de296d900ae
   - enabled: 1
-    path: Assets/Scenes/MasterLvls/Level 1.unity
-    guid: 92a5280627b0a7243bbd9a21a4898f76
+    path: Assets/Scenes/Lukes Levels Using Prefabs/Level 1.unity
+    guid: 506bbbcbd4ce3a442b9ff2b59bfadacb
   - enabled: 1
-    path: Assets/Scenes/MasterLvls/Level 2.unity
-    guid: 084407827b8bdc045821172da766d11b
+    path: Assets/Scenes/Lukes Levels Using Prefabs/Level 2.unity
+    guid: 889024e0beb2c0c4795df138c0f44828
   m_configObjects: {}
