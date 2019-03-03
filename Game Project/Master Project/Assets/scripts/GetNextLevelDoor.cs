@@ -7,21 +7,12 @@ public class GetNextLevelDoor : MonoBehaviour
     public GameObject key;
     public GameObject wallToDestroy;
     public Vector3 NextLevelDoorCoords;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
+     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "player")
+        if (other.gameObject.CompareTag("Player"))
         {
-
+            GameManager.keys += 1;
             Instantiate(key, NextLevelDoorCoords, Quaternion.identity);
             Destroy(wallToDestroy);
             Destroy(gameObject);

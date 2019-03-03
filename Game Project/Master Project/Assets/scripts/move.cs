@@ -15,16 +15,16 @@ public class move : MonoBehaviour
     bool disableA = false;
     bool disableS = false;
     bool disableD = false;
-    private int countKeys;
+
     public int points=0;
-    public Text countKeysText;
+    
 
     void Start()
     {
         
         ableToMove = true;
-        countKeys = 0;
-        //SetCountText();
+        
+        
 
     }
 
