@@ -29,7 +29,7 @@ public class move : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void Update()
+    void Update()
     {
         var speed = rb.velocity.magnitude;
 
@@ -43,12 +43,12 @@ public class move : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
 
         if (ableToMove == true)
         {
-            if (Input.GetKey("a")&& disableA==false)
+            if (Input.GetKey("a") && disableA == false)
             {
                 rb.AddForce(Vector3.left * thrust * Time.deltaTime, ForceMode2D.Impulse);
                 ableToMove = false;
@@ -73,7 +73,7 @@ public class move : MonoBehaviour
             }
             if (Input.GetKey("w") && disableW == false)
             {
-                
+
                 rb.AddForce(Vector3.up * thrust * Time.deltaTime, ForceMode2D.Impulse);
                 ableToMove = false;
                 disableA = false;
@@ -97,32 +97,15 @@ public class move : MonoBehaviour
             }
 
         }
-        else
-            
-            Debug.Log("");
+        
 
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("coin"))
-        {
-
-            points += 110;
-            //Destroy(collision.gameObject);
-            Debug.Log("sad");
-            Destroy(collision.gameObject);
-            ableToMove = true;
-            disableA = false;
-            disableW = false;
-            disableS = false;
-            disableD = false;
-
-        }
+    
         
 
 
-    }
+    
 
     //void OnTriggerEnter2D(Collider2D other)
     //{

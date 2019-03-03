@@ -17,13 +17,14 @@ public class GetNextLevelDoor : MonoBehaviour
     void Update()
     {
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.name == "player")
+        if (other.gameObject.name == "player")
         {
 
             Instantiate(key, NextLevelDoorCoords, Quaternion.identity);
             Destroy(wallToDestroy);
+            Destroy(gameObject);
         }
 
 

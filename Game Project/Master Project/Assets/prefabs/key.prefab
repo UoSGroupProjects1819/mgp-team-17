@@ -92,7 +92,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.81406784, y: -0.0751698}
@@ -143,4 +143,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: {fileID: 2017744427, guid: 21b6a4d48cbb0854190db64b2be878b4, type: 3}
   wallToDestroy: {fileID: 0}
-  NextLevelDoorCoords: {x: 0, y: 0, z: 0}
+  NextLevelDoorCoords: {x: -6.56, y: 0.65, z: 0}
