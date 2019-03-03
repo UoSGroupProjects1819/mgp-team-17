@@ -23,9 +23,7 @@ public class coins : MonoBehaviour
         {
 
             scenesVariables.score += 110;
-
-            Debug.Log("sad");
-           Destroy(gameObject);
+            Destroy(gameObject);
 
 
         }
