@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
 {
     static public int coins = 0;
     static public int keys = 0;
-    static public float timeLeft = 180f;
-
+    static public float timeLeft;
+    public float newtimeleft;
 
 
 
@@ -22,6 +22,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+        timeLeft = newtimeleft;
+        newtimeleft = timeLeft;
         coins = 0;
         keys = 0;
         SetTimerText();
@@ -37,7 +40,7 @@ public class GameManager : MonoBehaviour
         if (timeLeft < 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            
+            timeLeft = newtimeleft;
         }
     }
 

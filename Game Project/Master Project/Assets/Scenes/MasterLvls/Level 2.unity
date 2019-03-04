@@ -511,6 +511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afa0d9db36bafe947b38d25c44a67733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newtimeleft: 20
   timerText: {fileID: 1543584633}
   coinText: {fileID: 584843399}
 --- !u!4 &502241935
