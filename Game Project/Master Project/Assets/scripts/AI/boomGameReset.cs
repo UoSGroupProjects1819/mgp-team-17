@@ -18,14 +18,15 @@ public class boomGameReset : MonoBehaviour
     {
         
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.name == "player")
+        if (other.gameObject.tag == "Player")
         {
 
-            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+
         }
 
-        
     }
 }

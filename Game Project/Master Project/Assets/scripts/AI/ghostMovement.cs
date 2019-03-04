@@ -19,14 +19,15 @@ public class ghostMovement : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * 0.001f);
 
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.name == "player")
+        if (other.gameObject.tag == "Player")
         {
 
-            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-        }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
+
+        }
 
     }
 }
