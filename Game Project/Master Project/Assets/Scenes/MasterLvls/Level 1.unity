@@ -353,7 +353,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25.5, y: 206.13}
+  m_AnchoredPosition: {x: 63.325, y: 204.17}
   m_SizeDelta: {x: 211, y: 68.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &317803046
@@ -526,7 +526,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 2
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -764,7 +764,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 280, y: 212.65}
+  m_AnchoredPosition: {x: 297, y: 210.64}
   m_SizeDelta: {x: 256.35, y: 55.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &519205837
@@ -1819,8 +1819,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -225, y: 206.15}
-  m_SizeDelta: {x: 304.65, y: 68.7}
+  m_AnchoredPosition: {x: -202, y: 204.17}
+  m_SizeDelta: {x: 304.6, y: 68.655}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1401191119
 MonoBehaviour:
@@ -2462,7 +2462,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 560, y: -345}
+  m_AnchoredPosition: {x: 4.4, y: -223.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.49999997, y: 0.5}
 --- !u!114 &2099931159
@@ -2485,7 +2485,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.16078432, g: 0.4901961, b: 0.6862745, a: 1}
+    m_NormalColor: {r: 0.16078432, g: 0.49411765, b: 0.6901961, a: 1}
     m_HighlightedColor: {r: 0.53631186, g: 0.74453384, b: 0.8679245, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}

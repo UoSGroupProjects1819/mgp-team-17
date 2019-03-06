@@ -5,19 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MasterLvls/Menu.unity
     guid: a5abe2d1c8f0f91428962851189526ba
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MasterLvls/Tutorial.unity
     guid: 2ab56648d193034419f60a0255dd0286
   - enabled: 1
     path: Assets/Scenes/MasterLvls/Level 1.unity
     guid: 92a5280627b0a7243bbd9a21a4898f76
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MasterLvls/Level 2.unity
     guid: 084407827b8bdc045821172da766d11b
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MasterLvls/DemoEnd.unity
     guid: 2bf5d01f7ad45bd4f9d4ef86dbe11d99
   m_configObjects: {}
