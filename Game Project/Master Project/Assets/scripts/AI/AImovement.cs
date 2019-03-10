@@ -4,17 +4,24 @@ using UnityEngine;
 
 public class AImovement : MonoBehaviour
 {
-    public int target;
+    //this is the first marker enemy will go to
+    int target;
     public Vector3[] markers;
     public float speed;
+    //this is where enemy will stop
+    public int whereToStop;
+    //this is where it will start again
+    public int whereToStart;
+    
 
 
     bool b;
     int i;
     void Start()
     {
+        target = whereToStart;
 
-        //Put however many Empty game objects in your scene for position markers and name them "marker1" and "marker2" and "marker3"
+        //Put however many Empty game objects in your scene for position markers and name them "marker0" and "marker1" and "marker2"
 
         b = false;
         i = 0;
@@ -35,7 +42,7 @@ public class AImovement : MonoBehaviour
         if (transform.position == markers[target])
         {
             target++;
-            if (target == markers.Length) { target = 0; }
+            if (target == whereToStop+1) { target = whereToStart; }
         }
 
     }
