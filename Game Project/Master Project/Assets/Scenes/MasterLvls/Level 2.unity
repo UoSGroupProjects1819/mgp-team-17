@@ -186,27 +186,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 596871dc224d3a147b5ebcf01040e900, type: 3}
---- !u!1 &377697689 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5690264482428610636, guid: 8d3c17f5fb26e334082ae043a0d57556,
-    type: 3}
-  m_PrefabInstance: {fileID: 1588437147}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &377697690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 377697689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0aeea10b4ee368f45a36bae137af6a71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: 0
-  markers: []
-  speed: 0.1
 --- !u!1001 &405507418
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -270,6 +249,23 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.073010676
       objectReference: {fileID: 0}
+    - target: {fileID: 2137678382, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
+      propertyPath: wallToDestroy
+      value: 
+      objectReference: {fileID: 1715244775}
+    - target: {fileID: 2137678382, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 2017744427, guid: 21b6a4d48cbb0854190db64b2be878b4,
+        type: 3}
+    - target: {fileID: 2137678382, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
+      propertyPath: NextLevelDoorCoords.x
+      value: 6.565702
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137678382, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
+      propertyPath: NextLevelDoorCoords.y
+      value: -2.985402
+      objectReference: {fileID: 0}
     - target: {fileID: 2137678386, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -314,23 +310,6 @@ PrefabInstance:
     - target: {fileID: 2137678385, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 7.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2137678382, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
-      propertyPath: wallToDestroy
-      value: 
-      objectReference: {fileID: 1715244775}
-    - target: {fileID: 2137678382, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
-      propertyPath: key
-      value: 
-      objectReference: {fileID: 2017744427, guid: 21b6a4d48cbb0854190db64b2be878b4,
-        type: 3}
-    - target: {fileID: 2137678382, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
-      propertyPath: NextLevelDoorCoords.x
-      value: 6.565702
-      objectReference: {fileID: 0}
-    - target: {fileID: 2137678382, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
-      propertyPath: NextLevelDoorCoords.y
-      value: -2.985402
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
@@ -2288,6 +2267,16 @@ PrefabInstance:
     - target: {fileID: 5632223600126473600, guid: 8d3c17f5fb26e334082ae043a0d57556,
         type: 3}
       propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6136056465835636523, guid: 8d3c17f5fb26e334082ae043a0d57556,
+        type: 3}
+      propertyPath: speed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6136056465835636523, guid: 8d3c17f5fb26e334082ae043a0d57556,
+        type: 3}
+      propertyPath: whereToStop
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
