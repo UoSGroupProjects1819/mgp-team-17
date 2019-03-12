@@ -230,8 +230,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -295.97, y: 101.42}
-  m_SizeDelta: {x: 196.37, y: 56.56}
+  m_AnchoredPosition: {x: -321.89996, y: 101.7}
+  m_SizeDelta: {x: 144.5, y: 56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &225436393
 MonoBehaviour:
@@ -1941,9 +1941,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newtimeleft: 15
-  outOfKeys: 2
-  outOfCoins: 3
-  keysText: {fileID: 2049731996}
   timerText: {fileID: 2130761184}
   coinText: {fileID: 225436393}
 --- !u!4 &1647950846
@@ -2489,8 +2486,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -299.07, y: -51.3}
-  m_SizeDelta: {x: 190.17, y: 51.2}
+  m_AnchoredPosition: {x: -321.9, y: -51.3}
+  m_SizeDelta: {x: 144.5, y: 51.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2049731996
 MonoBehaviour:

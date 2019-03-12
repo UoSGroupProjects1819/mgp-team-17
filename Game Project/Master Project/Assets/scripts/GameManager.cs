@@ -10,13 +10,12 @@ public class GameManager : MonoBehaviour
     static public int keys = 0;
     static public float timeLeft;
     public float newtimeleft;
-    public int outOfKeys;
-    public int outOfCoins;
 
 
 
 
-    public Text keysText;
+
+
     public Text timerText;
     public Text coinText;
     
@@ -30,7 +29,6 @@ public class GameManager : MonoBehaviour
         keys = 0;
         SetTimerText();
         SetCoinsText();
-        SetKeysText();
     }
 
     // Update is called once per frame
@@ -39,7 +37,6 @@ public class GameManager : MonoBehaviour
         timeLeft -= Time.deltaTime;
         SetTimerText();
         SetCoinsText();
-        SetKeysText();
         if (timeLeft < 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -56,12 +53,7 @@ public class GameManager : MonoBehaviour
 
     void SetCoinsText()
     {
-        coinText.text = "Coins: " + coins.ToString() + "/"+ outOfCoins;
-    }
-
-    void SetKeysText()
-    {
-        keysText.text = "Keys: " + keys.ToString() + "/" + outOfKeys;
+        coinText.text = "Coins: " + coins.ToString();
     }
     //int myBlubb = (int)myFloatBlubb;
 
