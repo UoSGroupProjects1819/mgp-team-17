@@ -1461,18 +1461,29 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6136056465835636523, guid: 8d3c17f5fb26e334082ae043a0d57556,
-        type: 3}
-      propertyPath: speed
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6136056465835636523, guid: 8d3c17f5fb26e334082ae043a0d57556,
-        type: 3}
-      propertyPath: whereToStop
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d3c17f5fb26e334082ae043a0d57556, type: 3}
+--- !u!1 &1198251718 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5690264482428610636, guid: 8d3c17f5fb26e334082ae043a0d57556,
+    type: 3}
+  m_PrefabInstance: {fileID: 1198251717}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1198251719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198251718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aeea10b4ee368f45a36bae137af6a71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 0
+  markers: []
+  speed: 0.1
 --- !u!1001 &1255724104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1676,6 +1687,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53afb3b307f4e1e478f4efb200980f77, type: 3}
+--- !u!1 &1406609688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5690264482428610636, guid: 8d3c17f5fb26e334082ae043a0d57556,
+    type: 3}
+  m_PrefabInstance: {fileID: 1674967238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1406609689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406609688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aeea10b4ee368f45a36bae137af6a71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 0
+  markers: []
+  speed: 0.1
 --- !u!1001 &1418819687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2095,16 +2127,6 @@ PrefabInstance:
     - target: {fileID: 5632223600126473600, guid: 8d3c17f5fb26e334082ae043a0d57556,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6136056465835636523, guid: 8d3c17f5fb26e334082ae043a0d57556,
-        type: 3}
-      propertyPath: speed
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6136056465835636523, guid: 8d3c17f5fb26e334082ae043a0d57556,
-        type: 3}
-      propertyPath: whereToStop
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
