@@ -556,6 +556,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newtimeleft: 20
+  outOfKeys: 1
+  outOfCoins: 4
+  keysText: {fileID: 1417632667}
   timerText: {fileID: 1543584633}
   coinText: {fileID: 584843399}
 --- !u!4 &502241935
