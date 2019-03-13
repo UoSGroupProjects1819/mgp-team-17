@@ -22,7 +22,10 @@ public class move : MonoBehaviour
     void Start()
     {
         
-        ableToMove = true;
+        if (GameManager.moveNum <= 0)
+        {
+            ableToMove = false;
+        }
         
         
 
@@ -40,6 +43,11 @@ public class move : MonoBehaviour
         else
         {
             ableToMove = true;
+        }
+
+        if (GameManager.moveNum <= 0)
+        {
+            ableToMove = false;
         }
     }
 

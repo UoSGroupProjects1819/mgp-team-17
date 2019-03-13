@@ -626,6 +626,8 @@ MonoBehaviour:
   newMoveNum: 2147483647
   outOfCoins: 4
   outOfKeys: 1
+  outOfMoves: 0
+  movesText: {fileID: 0}
   keysText: {fileID: 1417632667}
   timerText: {fileID: 1543584633}
   coinText: {fileID: 584843399}
