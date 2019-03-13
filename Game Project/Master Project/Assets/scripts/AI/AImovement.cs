@@ -39,7 +39,7 @@ public class AImovement : MonoBehaviour
 
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, markers[target], speed );
+        transform.position = Vector3.MoveTowards(transform.position, markers[target], speed*Time.deltaTime );
         if (transform.position == markers[target])
         {
             target++;
