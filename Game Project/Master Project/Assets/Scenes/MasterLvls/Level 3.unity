@@ -4175,6 +4175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newtimeleft: 15
+  newMoveNum: 500000000
   outOfCoins: 3
   outOfKeys: 2
   keysText: {fileID: 2049731996}

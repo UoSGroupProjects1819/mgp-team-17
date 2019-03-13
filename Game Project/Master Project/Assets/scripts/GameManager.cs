@@ -14,14 +14,16 @@ public class GameManager : MonoBehaviour
     public int newMoveNum;
     public int outOfCoins;
     public int outOfKeys;
-
-    
-
+    public int outOfMoves;
 
 
 
 
 
+
+
+
+    public Text movesText;
     public Text keysText;
     public Text timerText;
     public Text coinText;
@@ -33,14 +35,18 @@ public class GameManager : MonoBehaviour
     {
         moveNum = newMoveNum;
         newMoveNum = moveNum;
+        outOfMoves = moveNum;
 
         timeLeft = newtimeleft;
         newtimeleft = timeLeft;
+        
         coins = 0;
         keys = 0;
         SetTimerText();
         SetCoinsText();
         SetKeysText();
+        SetMovesText();
+        Slides();
     }
 
     // Update is called once per frame
@@ -51,6 +57,7 @@ public class GameManager : MonoBehaviour
         SetCoinsText();
         SetKeysText();
         Slides();
+        SetMovesText();
         if (timeLeft < 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -77,13 +84,19 @@ public class GameManager : MonoBehaviour
         keysText.text = "Keys: " + keys.ToString() + "/" + outOfKeys.ToString();
     }
 
+    void SetMovesText()
+    {
+        movesText.text = "Moves: " + moveNum.ToString() + "/" + outOfMoves.ToString(); 
+    }
+
     void Slides()
     {
         if (moveNum <= 0)
         {
-           
+            
             movesLoseDelay();
             move.ableToMove = false;
+            return;
 
         }
     }
@@ -96,6 +109,7 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
+
 
 
 
