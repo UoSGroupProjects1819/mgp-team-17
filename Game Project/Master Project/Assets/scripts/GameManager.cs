@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
     {
         coinText.text = "Coins: " + coins.ToString() + "/"+ outOfCoins.ToString();
     }
-    //int myBlubb = (int)myFloatBlubb;
+    
 
 
     void SetKeysText()
@@ -68,6 +68,6 @@ public class GameManager : MonoBehaviour
         keysText.text = "Keys: " + keys.ToString() + "/" + outOfKeys.ToString();
     }
 
+    //int myBlubb = (int)myFloatBlubb;
 
-    
 }
