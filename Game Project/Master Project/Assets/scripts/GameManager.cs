@@ -9,9 +9,13 @@ public class GameManager : MonoBehaviour
     static public int coins = 0;
     static public int keys = 0;
     static public float timeLeft;
+    static public int moveNum;
     public float newtimeleft;
+    public int newMoveNum;
     public int outOfCoins;
     public int outOfKeys;
+
+    
 
 
 
@@ -21,11 +25,15 @@ public class GameManager : MonoBehaviour
     public Text keysText;
     public Text timerText;
     public Text coinText;
+
+    private float endtime= 2f;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        moveNum = newMoveNum;
+        newMoveNum = moveNum;
+
         timeLeft = newtimeleft;
         newtimeleft = timeLeft;
         coins = 0;
@@ -42,6 +50,7 @@ public class GameManager : MonoBehaviour
         SetTimerText();
         SetCoinsText();
         SetKeysText();
+        Slides();
         if (timeLeft < 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -67,6 +76,31 @@ public class GameManager : MonoBehaviour
     {
         keysText.text = "Keys: " + keys.ToString() + "/" + outOfKeys.ToString();
     }
+
+    void Slides()
+    {
+        if (moveNum <= 0)
+        {
+           
+            movesLoseDelay();
+            move.ableToMove = false;
+
+        }
+    }
+
+    void movesLoseDelay()
+    {
+        endtime -= Time.deltaTime;
+        if (endtime < 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
+
+
+
+
+
 
     //int myBlubb = (int)myFloatBlubb;
 

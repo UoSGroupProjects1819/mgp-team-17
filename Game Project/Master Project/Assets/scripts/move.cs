@@ -10,7 +10,7 @@ public class move : MonoBehaviour
     // Use this for initialization
     public Rigidbody2D rb;
     public float thrust = 200f;
-    public bool ableToMove;
+    static public bool ableToMove;
     bool disableW = false;
     bool disableA = false;
     bool disableS = false;
@@ -56,6 +56,7 @@ public class move : MonoBehaviour
                 disableW = false;
                 disableS = false;
                 disableD = false;
+                GameManager.moveNum -=1;
                 return;
 
             }
@@ -67,6 +68,7 @@ public class move : MonoBehaviour
                 disableW = false;
                 disableS = false;
                 disableD = true;
+                GameManager.moveNum -= 1;
                 return;
 
 
@@ -80,6 +82,7 @@ public class move : MonoBehaviour
                 disableW = true;
                 disableS = false;
                 disableD = false;
+                GameManager.moveNum -= 1;
                 return;
 
 
@@ -92,6 +95,7 @@ public class move : MonoBehaviour
                 disableW = false;
                 disableS = true;
                 disableD = false;
+                GameManager.moveNum -=1;
                 return;
 
             }
