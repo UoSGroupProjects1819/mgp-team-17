@@ -20,10 +20,11 @@ public class boomGameReset : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag=="Player")
         {
-
+            Debug.Log("sds");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Debug.Log("sds");
 
 
         }

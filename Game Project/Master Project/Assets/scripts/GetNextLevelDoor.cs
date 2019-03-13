@@ -23,7 +23,7 @@ public class GetNextLevelDoor : MonoBehaviour
             Destroy(gameObject);
             Destroy(wallToDestroy);
 
-            wallToActivate.SetActive(true);
+            //wallToActivate.SetActive(true);
         }
 
 

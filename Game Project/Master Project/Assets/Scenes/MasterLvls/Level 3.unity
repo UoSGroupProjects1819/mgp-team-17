@@ -3560,6 +3560,11 @@ PrefabInstance:
       propertyPath: whereToStop
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5632223600126473600, guid: 8d3c17f5fb26e334082ae043a0d57556,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d3c17f5fb26e334082ae043a0d57556, type: 3}
 --- !u!1001 &1458140102
@@ -3785,6 +3790,11 @@ PrefabInstance:
     - target: {fileID: 8536164248922402867, guid: 8d3c17f5fb26e334082ae043a0d57556,
         type: 3}
       propertyPath: whereToStop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632223600126473600, guid: 8d3c17f5fb26e334082ae043a0d57556,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
