@@ -16,7 +16,7 @@ public class ghostMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * 0.001f);
+        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed *Time.deltaTime);
 
     }
     void OnTriggerEnter2D(Collider2D other)
