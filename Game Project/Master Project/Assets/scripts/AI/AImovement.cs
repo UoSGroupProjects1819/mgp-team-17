@@ -20,7 +20,7 @@ public class AImovement : MonoBehaviour
     void Start()
     {
         target = whereToStart;
-        speed = 0.1f;
+        speed = 6f;
 
         //Put however many Empty game objects in your scene for position markers and name them "marker0" and "marker1" and "marker2"
 

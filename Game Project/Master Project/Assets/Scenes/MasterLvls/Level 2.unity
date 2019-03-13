@@ -360,6 +360,10 @@ PrefabInstance:
       propertyPath: NextLevelDoorCoords.y
       value: -2.985402
       objectReference: {fileID: 0}
+    - target: {fileID: 2137678382, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
+      propertyPath: doYouWantToSpawnAnExit
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
 --- !u!1001 &466680869
