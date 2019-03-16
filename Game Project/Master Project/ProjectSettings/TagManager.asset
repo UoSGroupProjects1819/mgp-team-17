@@ -9,6 +9,7 @@ TagManager:
   - Key
   - coin
   - wall
+  - Teleporter
   layers:
   - Default
   - TransparentFX
