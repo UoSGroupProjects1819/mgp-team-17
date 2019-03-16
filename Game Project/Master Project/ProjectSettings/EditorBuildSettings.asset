@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MasterLvls/DemoEnd.unity
     guid: 2bf5d01f7ad45bd4f9d4ef86dbe11d99
+  - enabled: 1
+    path: Assets/Scenes/MasterLvls/Level 4.unity
+    guid: 7495636c48a2e0349a732a92e9060fe0
+  - enabled: 1
+    path: Assets/Scenes/MasterLvls/Level 5.unity
+    guid: ba5c5db6facf2d54f933f9f07e846e21
+  - enabled: 1
+    path: Assets/Scenes/MasterLvls/Level 6.unity
+    guid: cd5ba682fa979ff48889034858d3fd80
   m_configObjects: {}
