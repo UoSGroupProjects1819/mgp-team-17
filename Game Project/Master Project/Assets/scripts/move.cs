@@ -28,10 +28,13 @@ public class move : MonoBehaviour
         {
             ableToMove = false;
         }
+        Debug.Log(GameManager.moveNum);
         
         moves = GameManager.moveNum;
+        Debug.Log(moves);
         
         fadeVar = 1/moves;
+        Debug.Log(fadeVar);
         
 
     }
