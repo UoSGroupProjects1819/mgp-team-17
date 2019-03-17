@@ -73,7 +73,7 @@ public class move : MonoBehaviour
                 disableS = false;
                 disableD = false;
                 GameManager.moveNum -=1;
-                this.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, this.GetComponent<SpriteRenderer>().color.a - fadeVar);
+               // this.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, this.GetComponent<SpriteRenderer>().color.a - fadeVar);
                 return;
 
             }
@@ -86,7 +86,7 @@ public class move : MonoBehaviour
                 disableS = false;
                 disableD = true;
                 GameManager.moveNum -= 1;
-                this.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, this.GetComponent<SpriteRenderer>().color.a - fadeVar);
+               // this.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, this.GetComponent<SpriteRenderer>().color.a - fadeVar);
                 return;
 
 
@@ -103,7 +103,7 @@ public class move : MonoBehaviour
                 disableD = false;
                 GameManager.moveNum -= 1;
                 Debug.Log(GameManager.moveNum);
-                this.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, this.GetComponent<SpriteRenderer>().color.a - fadeVar);
+               // this.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, this.GetComponent<SpriteRenderer>().color.a - fadeVar);
                 return;
 
 
@@ -117,7 +117,7 @@ public class move : MonoBehaviour
                 disableS = true;
                 disableD = false;
                 GameManager.moveNum -=1;
-                this.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, this.GetComponent<SpriteRenderer>().color.a - fadeVar);
+               // this.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, this.GetComponent<SpriteRenderer>().color.a - fadeVar);
                 return;
 
             }
