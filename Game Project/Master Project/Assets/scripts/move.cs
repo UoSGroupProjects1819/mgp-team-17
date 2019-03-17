@@ -10,7 +10,7 @@ public class move : MonoBehaviour
     // Use this for initialization
     public Rigidbody2D rb;
     public float thrust = 200f;
-    static public bool ableToMove;
+   static public bool ableToMove;
     bool disableW = false;
     bool disableA = false;
     bool disableS = false;
