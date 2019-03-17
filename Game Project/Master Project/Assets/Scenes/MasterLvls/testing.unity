@@ -571,7 +571,7 @@ PrefabInstance:
     - target: {fileID: 4435474487958294239, guid: e7e333df656e8a24599ccc33ea421214,
         type: 3}
       propertyPath: newMoveNum
-      value: 10000
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7e333df656e8a24599ccc33ea421214, type: 3}
