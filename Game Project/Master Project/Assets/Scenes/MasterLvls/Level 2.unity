@@ -623,7 +623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newtimeleft: 20
-  newMoveNum: 10
+  newMoveNum: 2147483647
   outOfCoins: 4
   outOfKeys: 1
   outOfMoves: 0

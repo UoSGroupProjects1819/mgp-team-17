@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
 
 
-
+    public GameObject OutOfMovesScreen;
 
 
 
@@ -28,8 +28,8 @@ public class GameManager : MonoBehaviour
     public Text timerText;
     public Text coinText;
 
-    private float endtime= 2f;
-    
+    private float endtime= 3f;
+    private float uitime = 1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -93,9 +93,10 @@ public class GameManager : MonoBehaviour
     {
         if (moveNum <= 0)
         {
-            
+            OutOfMovesUI();
             movesLoseDelay();
             move.ableToMove = false;
+            
             return;
 
         }
@@ -103,11 +104,23 @@ public class GameManager : MonoBehaviour
 
     void movesLoseDelay()
     {
+        
         endtime -= Time.deltaTime;
+        
         if (endtime < 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+    }
+
+    void OutOfMovesUI()
+    {
+        uitime -= Time.deltaTime;
+        if (uitime < 0)
+        {
+            OutOfMovesScreen.SetActive(true);
+        }
+        
     }
 
 
