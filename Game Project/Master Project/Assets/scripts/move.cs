@@ -23,8 +23,6 @@ public class move : MonoBehaviour
 
     void Start()
     {
-        ;
-        
         
 
 
