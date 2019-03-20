@@ -10,8 +10,11 @@ public class GameManager : MonoBehaviour
     static public int keys = 0;
     static public float timeLeft;
     static public int moveNum;
+
     public float newtimeleft;
-    public int newMoveNum;
+
+
+    public int newMoveNum; 
     public int outOfCoins;
     public int outOfKeys;
     public int outOfMoves;
@@ -32,9 +35,11 @@ public class GameManager : MonoBehaviour
     private float uitime = 1f;
     // Start is called before the first frame update
     void Start()
-    {
+    {   
         moveNum = newMoveNum;
         newMoveNum = moveNum;
+        
+       
         outOfMoves = moveNum;
 
         timeLeft = newtimeleft;
