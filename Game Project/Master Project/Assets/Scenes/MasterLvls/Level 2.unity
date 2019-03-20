@@ -627,6 +627,7 @@ MonoBehaviour:
   outOfCoins: 4
   outOfKeys: 1
   outOfMoves: 0
+  OutOfMovesScreen: {fileID: 0}
   movesText: {fileID: 0}
   keysText: {fileID: 1417632667}
   timerText: {fileID: 1543584633}
@@ -3198,6 +3199,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2159867503769102976, guid: 2fddca4fae373874e954d2d1d929aaf0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fddca4fae373874e954d2d1d929aaf0, type: 3}
