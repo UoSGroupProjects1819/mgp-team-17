@@ -595,12 +595,12 @@ PrefabInstance:
     - target: {fileID: 4435474487958294239, guid: e7e333df656e8a24599ccc33ea421214,
         type: 3}
       propertyPath: newtimeleft
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4435474487958294239, guid: e7e333df656e8a24599ccc33ea421214,
         type: 3}
       propertyPath: newMoveNum
-      value: 3
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4435474487958294239, guid: e7e333df656e8a24599ccc33ea421214,
         type: 3}
@@ -1105,6 +1105,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5183914
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812543235161630538, guid: 4244ec7dde000904dbb6cec4bdb61d68,
+        type: 3}
+      propertyPath: fadeVar
+      value: 0.067
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4244ec7dde000904dbb6cec4bdb61d68, type: 3}

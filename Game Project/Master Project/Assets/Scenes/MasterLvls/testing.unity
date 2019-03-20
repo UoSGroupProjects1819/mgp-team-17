@@ -1272,7 +1272,7 @@ PrefabInstance:
     - target: {fileID: 4435474487958294239, guid: e7e333df656e8a24599ccc33ea421214,
         type: 3}
       propertyPath: newtimeleft
-      value: 50
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4435474487958294239, guid: e7e333df656e8a24599ccc33ea421214,
         type: 3}

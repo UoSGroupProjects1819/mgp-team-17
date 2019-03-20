@@ -18,7 +18,7 @@ public class move : MonoBehaviour
     public float fadeVar;
     float moves;
 
-    public int points=0;
+  
     
 
     void Start()
