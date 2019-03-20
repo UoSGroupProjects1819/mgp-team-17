@@ -11,11 +11,9 @@ public class coins : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-           other.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, this.GetComponent<SpriteRenderer>().color.a +0.2f);
             GameManager.timeLeft += 5f;
             GameManager.coins += 1;
             Destroy(gameObject);
-            
 
 
         }
