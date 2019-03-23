@@ -38,7 +38,7 @@ public class move : MonoBehaviour
     void Update()
 
     {
-        //Debug.Log(fadeVar);
+        Debug.Log(fadeVar);
         var speed = rb.velocity.magnitude;
 
         if (speed > 0.5)
