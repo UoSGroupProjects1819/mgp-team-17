@@ -1,15 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Teleport : MonoBehaviour
 {
-    GameObject playerr;
     
+    public float teleportCooldown;
+   public  GameObject barEnter;
+    public GameObject barExit;
+    
+
     public GameObject target;
     private void Start()
     {
-         playerr = GameObject.Find("Player");
+       // barEnter = GameObject.Find("Teleporter-enter");
+        //barExit = GameObject.Find("Teleporter-exit");
 
     }
    
@@ -22,7 +28,13 @@ public class Teleport : MonoBehaviour
         {
             Vector3 posi = target.gameObject.transform.position;
             collision.gameObject.transform.position = posi;
-           
+            
+
+            
+            //barEnter.gameObject.GetComponentInChildren<telebarEnter>().BarWork();
+           // barExit.GetComponent<TelebarExit>().BarWork();
+
+         
             StartCoroutine(MyCoroutine());
 
         }
@@ -30,12 +42,17 @@ public class Teleport : MonoBehaviour
     }
     IEnumerator MyCoroutine()
     {
+        Instantiate(barEnter);
+        Instantiate(barExit);
+
 
         target.gameObject.SetActive(false);
-        
 
-        yield return new WaitForSeconds(0.1f);
+      
+        yield return new WaitForSeconds(teleportCooldown);
 
+        DestroyImmediate(barEnter);
+        DestroyImmediate(barExit);
         target.gameObject.SetActive(true);
         
     }
