@@ -6,19 +6,20 @@ using UnityEngine.UI;
 public class Teleport : MonoBehaviour
 {
     
-    public float teleportCooldown;
-   public  GameObject barEnter;
-    public GameObject barExit;
-    
-
+   // public float teleportCooldown;
+    public GameObject TeleportBarEnter;
+    public GameObject TeleportBarExit;
     public GameObject target;
+
+
     private void Start()
     {
-       // barEnter = GameObject.Find("Teleporter-enter");
-        //barExit = GameObject.Find("Teleporter-exit");
+        
+       
 
     }
-   
+  
+
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -28,33 +29,35 @@ public class Teleport : MonoBehaviour
         {
             Vector3 posi = target.gameObject.transform.position;
             collision.gameObject.transform.position = posi;
-            
+
+
+            Instantiate(TeleportBarEnter);
+            Instantiate(TeleportBarExit);
 
             
-            //barEnter.gameObject.GetComponentInChildren<telebarEnter>().BarWork();
-           // barExit.GetComponent<TelebarExit>().BarWork();
 
-         
+
             StartCoroutine(MyCoroutine());
 
         }
     
     }
+    
+
+
     IEnumerator MyCoroutine()
     {
-        Instantiate(barEnter);
-        Instantiate(barExit);
-
+        
 
         target.gameObject.SetActive(false);
 
-      
-        yield return new WaitForSeconds(teleportCooldown);
 
-        DestroyImmediate(barEnter);
-        DestroyImmediate(barExit);
-        target.gameObject.SetActive(true);
+        yield return new WaitForSeconds(GameObject.FindGameObjectWithTag("Player").GetComponent<storeTelePos>().teleportCD);
+
+    
         
+        target.gameObject.SetActive(true);
+
     }
 
 }

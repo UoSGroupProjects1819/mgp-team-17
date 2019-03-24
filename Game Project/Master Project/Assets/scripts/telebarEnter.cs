@@ -7,11 +7,21 @@ public class telebarEnter : MonoBehaviour
 
 {
     public Slider slider;
-    GameObject teleport;
+    float valueDate;
+    float valueDate1;
+
+
+
     private void Start()
     {
         gameObject.GetComponent<Slider>().value = 0;
-        teleport = GameObject.Find("Teleporter-enter");
+        valueDate =GameObject.FindGameObjectWithTag("Player").GetComponent<storeTelePos>().teleportCD;
+   
+        valueDate1 = 1 / valueDate;
+ 
+
+
+
     }
 
 
@@ -19,13 +29,12 @@ public class telebarEnter : MonoBehaviour
     void Update()
     {
 
-        Vector3 pos = teleport.transform.position;
-        pos.y += 1.5f;
+       
 
-        gameObject.transform.position = pos;
-        Debug.Log("merge");
-        gameObject.GetComponent<Slider>().value += 1/teleport.GetComponent<Teleport>().teleportCooldown * Time.deltaTime;
-        Destroy(gameObject, teleport.GetComponent<Teleport>().teleportCooldown);
+        gameObject.transform.position = GameObject.FindGameObjectWithTag("Player").GetComponent<storeTelePos>().pos1;
+       
+        gameObject.GetComponent<Slider>().value += valueDate1*Time.deltaTime ;
+        Destroy(gameObject, GameObject.FindGameObjectWithTag("Player").GetComponent<storeTelePos>().teleportCD);
         
 
     }
