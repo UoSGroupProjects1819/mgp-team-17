@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5812543235161630540}
   - component: {fileID: 5812543235161630539}
   - component: {fileID: 5812543235161630538}
+  - component: {fileID: 1840925874578963940}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -143,5 +144,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 5812543235161630539}
   thrust: 200
-  ableToMove: 0
-  points: 0
+  fadeVar: 0
+--- !u!114 &1840925874578963940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5812543235161630535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d004b726c1b5942a2c3b87b1c51018, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos1: {x: 0, y: 0, z: 0}
+  pos2: {x: 0, y: 0, z: 0}
+  teleportCD: 3

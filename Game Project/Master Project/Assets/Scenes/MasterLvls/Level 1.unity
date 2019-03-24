@@ -2202,18 +2202,6 @@ PrefabInstance:
       propertyPath: teleportCooldown
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 2674386652149378501, guid: fc85d00d1e55a894296b1756c82522eb,
-        type: 3}
-      propertyPath: TeleportBarEnter
-      value: 
-      objectReference: {fileID: 198982611003452213, guid: 871e0f8744a011e48a75d87c1b0928d5,
-        type: 3}
-    - target: {fileID: 2674386652149378501, guid: fc85d00d1e55a894296b1756c82522eb,
-        type: 3}
-      propertyPath: TeleportBarExit
-      value: 
-      objectReference: {fileID: 6204881276510885469, guid: c4fe672b3a04ab145ab7b0d892e06d7b,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc85d00d1e55a894296b1756c82522eb, type: 3}
 --- !u!1001 &812752295
@@ -2392,18 +2380,6 @@ PrefabInstance:
       propertyPath: teleportCooldown
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 6196451286291367804, guid: b2302419846f57d4aad9a9e41faf41b8,
-        type: 3}
-      propertyPath: TeleportBarEnter
-      value: 
-      objectReference: {fileID: 198982611003452213, guid: 871e0f8744a011e48a75d87c1b0928d5,
-        type: 3}
-    - target: {fileID: 6196451286291367804, guid: b2302419846f57d4aad9a9e41faf41b8,
-        type: 3}
-      propertyPath: TeleportBarExit
-      value: 
-      objectReference: {fileID: 6204881276510885469, guid: c4fe672b3a04ab145ab7b0d892e06d7b,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2302419846f57d4aad9a9e41faf41b8, type: 3}
 --- !u!114 &878663555 stripped
@@ -3752,27 +3728,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3768d8f00e5e32044a5ad8d5fd8d646a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1675414837 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5812543235161630535, guid: 4244ec7dde000904dbb6cec4bdb61d68,
-    type: 3}
-  m_PrefabInstance: {fileID: 610542579}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1675414843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1675414837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2d004b726c1b5942a2c3b87b1c51018, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pos1: {x: 0, y: 0, z: 0}
-  pos2: {x: 0, y: 0, z: 0}
-  teleportCD: 3
 --- !u!114 &1689044078 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3751949042895584800, guid: d66a98d8ec76db94fa2d045455815428,
