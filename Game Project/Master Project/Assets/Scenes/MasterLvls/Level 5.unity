@@ -343,16 +343,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 2.502299
       objectReference: {fileID: 0}
-    - target: {fileID: 8536164248922402867, guid: 8d3c17f5fb26e334082ae043a0d57556,
-        type: 3}
-      propertyPath: whereToStop
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8536164248922402867, guid: 8d3c17f5fb26e334082ae043a0d57556,
-        type: 3}
-      propertyPath: whereToStart
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5477141633468921384, guid: 8d3c17f5fb26e334082ae043a0d57556,
         type: 3}
       propertyPath: m_SortingOrder
@@ -378,6 +368,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536164248922402867, guid: 8d3c17f5fb26e334082ae043a0d57556,
+        type: 3}
+      propertyPath: whereToStop
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536164248922402867, guid: 8d3c17f5fb26e334082ae043a0d57556,
+        type: 3}
+      propertyPath: whereToStart
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d3c17f5fb26e334082ae043a0d57556, type: 3}
@@ -1422,16 +1422,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 2.1956036
       objectReference: {fileID: 0}
-    - target: {fileID: 8536164248922402867, guid: 8d3c17f5fb26e334082ae043a0d57556,
-        type: 3}
-      propertyPath: whereToStop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8536164248922402867, guid: 8d3c17f5fb26e334082ae043a0d57556,
-        type: 3}
-      propertyPath: whereToStart
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5477141633468921384, guid: 8d3c17f5fb26e334082ae043a0d57556,
         type: 3}
       propertyPath: m_SortingOrder
@@ -1456,6 +1446,16 @@ PrefabInstance:
     - target: {fileID: 5477141633468921384, guid: 8d3c17f5fb26e334082ae043a0d57556,
         type: 3}
       propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536164248922402867, guid: 8d3c17f5fb26e334082ae043a0d57556,
+        type: 3}
+      propertyPath: whereToStop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536164248922402867, guid: 8d3c17f5fb26e334082ae043a0d57556,
+        type: 3}
+      propertyPath: whereToStart
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10800,7 +10800,7 @@ Tilemap:
   - m_RefCount: 200
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.29803923, g: 0.8666667, b: 0.5294118, a: 1}
   m_Origin: {x: -10, y: -5, z: 0}
   m_Size: {x: 23, y: 11, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
