@@ -14,6 +14,7 @@ public class GetNextLevelDoor : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            FindObjectOfType<AudioManager>().Play("PickUp");
             GameManager.keys += 1;
             if (doYouWantToSpawnAnExit)
             {
