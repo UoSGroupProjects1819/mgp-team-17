@@ -64,6 +64,8 @@ public class move : MonoBehaviour
         {
             if (Input.GetKey("a") && disableA == false)
             {
+
+                FindObjectOfType<AudioManager>().Play("PlayerMove");
                 rb.AddForce(Vector3.left * thrust * Time.deltaTime, ForceMode2D.Impulse);
                 ableToMove = false;
                 disableA = true;
@@ -77,6 +79,8 @@ public class move : MonoBehaviour
             }
             if (Input.GetKey("d") && disableD == false)
             {
+
+                FindObjectOfType<AudioManager>().Play("PlayerMove");
                 rb.AddForce(Vector3.right * thrust * Time.deltaTime, ForceMode2D.Impulse);
                 ableToMove = false;
                 disableA = false;
@@ -92,7 +96,7 @@ public class move : MonoBehaviour
             }
             if (Input.GetKey("w") && disableW == false)
             {
-
+                FindObjectOfType<AudioManager>().Play("PlayerMove");
                 rb.AddForce(Vector3.up * thrust * Time.deltaTime, ForceMode2D.Impulse);
                 ableToMove = false;
                 disableA = false;
@@ -110,6 +114,7 @@ public class move : MonoBehaviour
             }
             if (Input.GetKey("s") && disableS == false)
             {
+                FindObjectOfType<AudioManager>().Play("PlayerMove");
                 rb.AddForce(Vector3.down * thrust * Time.deltaTime, ForceMode2D.Impulse);
                 ableToMove = false;
                 disableA = false;

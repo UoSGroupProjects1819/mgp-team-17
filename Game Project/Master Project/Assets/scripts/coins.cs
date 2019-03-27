@@ -20,7 +20,8 @@ public class coins : MonoBehaviour
             GameManager.coins += 1;
             other.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, other.GetComponent<SpriteRenderer>().color.a + 0.5f);
             Destroy(gameObject);
-            
+            FindObjectOfType<AudioManager>().Play("PickUp");
+
 
 
         }
