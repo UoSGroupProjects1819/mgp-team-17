@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
 
 
 
-
+    
     public GameObject OutOfMovesScreen;
 
 
@@ -35,7 +35,9 @@ public class GameManager : MonoBehaviour
     private float uitime = 1f;
     // Start is called before the first frame update
     void Start()
-    {   
+    {
+
+        
         moveNum = newMoveNum;
         newMoveNum = moveNum;
         
@@ -127,6 +129,12 @@ public class GameManager : MonoBehaviour
         }
         
     }
+
+
+
+
+
+
 
 
 

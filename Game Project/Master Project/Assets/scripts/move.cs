@@ -10,7 +10,10 @@ public class move : MonoBehaviour
     // Use this for initialization
     public Rigidbody2D rb;
     public float thrust = 200f;
+
    static public bool ableToMove;
+
+
     bool disableW = false;
     bool disableA = false;
     bool disableS = false;
@@ -18,12 +21,15 @@ public class move : MonoBehaviour
     public float fadeVar;
     float moves;
 
-  
-    
+    public AudioClip moveSound;
+    public AudioSource moveSource;
+
+
+
 
     void Start()
     {
-        
+        moveSource.clip = moveSound;
 
 
         if (GameManager.moveNum <= 0)
@@ -64,6 +70,8 @@ public class move : MonoBehaviour
         {
             if (Input.GetKey("a") && disableA == false)
             {
+
+                moveSource.Play();
                 rb.AddForce(Vector3.left * thrust * Time.deltaTime, ForceMode2D.Impulse);
                 ableToMove = false;
                 disableA = true;
@@ -71,12 +79,15 @@ public class move : MonoBehaviour
                 disableS = false;
                 disableD = false;
                 GameManager.moveNum -=1;
+                
                 //this.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, this.GetComponent<SpriteRenderer>().color.a - fadeVar);
                 return;
 
             }
             if (Input.GetKey("d") && disableD == false)
             {
+
+                moveSource.Play();
                 rb.AddForce(Vector3.right * thrust * Time.deltaTime, ForceMode2D.Impulse);
                 ableToMove = false;
                 disableA = false;
@@ -84,6 +95,7 @@ public class move : MonoBehaviour
                 disableS = false;
                 disableD = true;
                 GameManager.moveNum -= 1;
+                
                 //this.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, this.GetComponent<SpriteRenderer>().color.a - fadeVar);
                 return;
 
@@ -92,7 +104,7 @@ public class move : MonoBehaviour
             }
             if (Input.GetKey("w") && disableW == false)
             {
-
+                moveSource.Play();
                 rb.AddForce(Vector3.up * thrust * Time.deltaTime, ForceMode2D.Impulse);
                 ableToMove = false;
                 disableA = false;
@@ -100,16 +112,19 @@ public class move : MonoBehaviour
                 disableS = false;
                 disableD = false;
                 
-                Debug.Log(GameManager.moveNum);
+
                 GameManager.moveNum -= 1;
-               // this.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, this.GetComponent<SpriteRenderer>().color.a - fadeVar);
                 
+                // this.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, this.GetComponent<SpriteRenderer>().color.a - fadeVar);
+
                 return;
 
 
             }
             if (Input.GetKey("s") && disableS == false)
             {
+
+                moveSource.Play();
                 rb.AddForce(Vector3.down * thrust * Time.deltaTime, ForceMode2D.Impulse);
                 ableToMove = false;
                 disableA = false;
@@ -117,7 +132,8 @@ public class move : MonoBehaviour
                 disableS = true;
                 disableD = false;
                 GameManager.moveNum -=1;
-               // this.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, this.GetComponent<SpriteRenderer>().color.a - fadeVar);
+                
+                // this.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, this.GetComponent<SpriteRenderer>().color.a - fadeVar);
                 return;
 
             }
