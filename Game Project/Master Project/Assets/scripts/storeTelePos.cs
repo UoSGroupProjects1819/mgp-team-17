@@ -15,12 +15,14 @@ public class storeTelePos : MonoBehaviour
         if (enter != null)
         {
             pos1 = enter.transform.position;
-            pos1.y += 1.5f;
+            pos1.y += 0.8f;
+            pos1.z += 1;
         }
         if (exit != null)
         {
             pos2 = exit.transform.position;
-            pos2.y += 1.5f;
+            pos2.y += 0.8f;
+            pos2.z += 1;
 
         }
     }
