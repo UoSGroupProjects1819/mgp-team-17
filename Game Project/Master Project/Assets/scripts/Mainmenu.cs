@@ -75,4 +75,32 @@ public void LoadLevel5()
 {
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 9);
 }
+    public void LoadLevel1T()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 8);
+    }
+    public void LoadLevel2T()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 7);
+    }
+    public void LoadLevel3T()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 6);
+    }
+    public void LoadLevel4T()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 5);
+    }
+    public void LoadLevel5T()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 4);
+    }
+    public void LoadLevel6T()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
+    }
+    public void LoadLevel7T()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+    }
 }
