@@ -667,11 +667,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2137678387, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.6307125
+      value: -8.68
       objectReference: {fileID: 0}
     - target: {fileID: 2137678387, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.7503884
+      value: -3.82
       objectReference: {fileID: 0}
     - target: {fileID: 2137678387, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
       propertyPath: m_LocalPosition.z
@@ -708,6 +708,14 @@ PrefabInstance:
     - target: {fileID: 2137678387, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137678387, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.152376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137678387, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.138834
       objectReference: {fileID: 0}
     - target: {fileID: 2137678382, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
       propertyPath: wallToActivate
@@ -1130,11 +1138,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2137678387, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.665015
+      value: -8.74
       objectReference: {fileID: 0}
     - target: {fileID: 2137678387, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.6466603
+      value: 3.37
       objectReference: {fileID: 0}
     - target: {fileID: 2137678387, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1171,6 +1179,14 @@ PrefabInstance:
     - target: {fileID: 2137678387, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137678387, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.119
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137678387, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: 2137678382, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
       propertyPath: wallToActivate
