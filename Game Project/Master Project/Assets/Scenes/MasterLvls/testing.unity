@@ -207,11 +207,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2137678387, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.790314
+      value: 1.37
       objectReference: {fileID: 0}
     - target: {fileID: 2137678387, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.1537247
+      value: 3.46
       objectReference: {fileID: 0}
     - target: {fileID: 2137678387, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
       propertyPath: m_LocalPosition.z
@@ -491,6 +491,28 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.2018172
       objectReference: {fileID: 0}
+    - target: {fileID: 2674386652149378501, guid: fc85d00d1e55a894296b1756c82522eb,
+        type: 3}
+      propertyPath: TeleportBarEnter
+      value: 
+      objectReference: {fileID: 198982611003452213, guid: 871e0f8744a011e48a75d87c1b0928d5,
+        type: 3}
+    - target: {fileID: 2674386652149378501, guid: fc85d00d1e55a894296b1756c82522eb,
+        type: 3}
+      propertyPath: TeleportBarExit
+      value: 
+      objectReference: {fileID: 6204881276510885469, guid: c4fe672b3a04ab145ab7b0d892e06d7b,
+        type: 3}
+    - target: {fileID: 2674386652149378501, guid: fc85d00d1e55a894296b1756c82522eb,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 592792939023633322}
+    - target: {fileID: 2674386652149378501, guid: fc85d00d1e55a894296b1756c82522eb,
+        type: 3}
+      propertyPath: teleportCooldown
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4511659854492072196, guid: fc85d00d1e55a894296b1756c82522eb,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -595,28 +617,6 @@ PrefabInstance:
         type: 3}
       propertyPath: slider
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2674386652149378501, guid: fc85d00d1e55a894296b1756c82522eb,
-        type: 3}
-      propertyPath: TeleportBarEnter
-      value: 
-      objectReference: {fileID: 198982611003452213, guid: 871e0f8744a011e48a75d87c1b0928d5,
-        type: 3}
-    - target: {fileID: 2674386652149378501, guid: fc85d00d1e55a894296b1756c82522eb,
-        type: 3}
-      propertyPath: TeleportBarExit
-      value: 
-      objectReference: {fileID: 6204881276510885469, guid: c4fe672b3a04ab145ab7b0d892e06d7b,
-        type: 3}
-    - target: {fileID: 2674386652149378501, guid: fc85d00d1e55a894296b1756c82522eb,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 592792939023633322}
-    - target: {fileID: 2674386652149378501, guid: fc85d00d1e55a894296b1756c82522eb,
-        type: 3}
-      propertyPath: teleportCooldown
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc85d00d1e55a894296b1756c82522eb, type: 3}
