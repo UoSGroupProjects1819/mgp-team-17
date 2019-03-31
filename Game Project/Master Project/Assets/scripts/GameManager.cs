@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject OutOfMovesScreen;
 
-
+    
 
     public Text movesText;
     public Text keysText;
@@ -128,6 +128,7 @@ public class GameManager : MonoBehaviour
         
     }
 
+    
 
 
 
