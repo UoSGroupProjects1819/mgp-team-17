@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 public class LoadNextLevel : MonoBehaviour
 {
 
-    
+    public Saves saves;
     
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag=="Player")
         {
 
-
+            
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 

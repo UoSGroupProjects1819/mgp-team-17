@@ -5,30 +5,34 @@ using UnityEngine.SceneManagement;
 
 public class Saves : MonoBehaviour
 {
-    public static Saves instance = null;
+
     int sceneIndex;
     int levelPassed;
+   
     void Start()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else if (instance != null)
-        {
-            Destroy(gameObject);
-        }
+
 
 
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
         levelPassed = PlayerPrefs.GetInt("levelpassed");
+
+        Debug.Log(sceneIndex);
+       
+        Debug.Log(levelPassed);
+
+        Win();
+        
     }
 
     public void Win()
     {
-        if (levelPassed < sceneIndex)
-        {
-            PlayerPrefs.SetInt("levelpassed", sceneIndex);
-        }
+        
+        
+        PlayerPrefs.SetInt("levelpassed", sceneIndex-4);
+        
+        
     }
+
+
 }
