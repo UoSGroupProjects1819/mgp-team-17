@@ -441,6 +441,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.9646
       objectReference: {fileID: 0}
+    - target: {fileID: 8443984140891523651, guid: 9204f8489a7c3f448aebed66a821acf5,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9204f8489a7c3f448aebed66a821acf5, type: 3}
 --- !u!1001 &202194483
@@ -5097,15 +5102,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.275556
       objectReference: {fileID: 0}
-    - target: {fileID: 5812543235161630536, guid: 4244ec7dde000904dbb6cec4bdb61d68,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 5812543235161630538, guid: 4244ec7dde000904dbb6cec4bdb61d68,
         type: 3}
       propertyPath: fadeVar
       value: 0.0666
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812543235161630536, guid: 4244ec7dde000904dbb6cec4bdb61d68,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4244ec7dde000904dbb6cec4bdb61d68, type: 3}
