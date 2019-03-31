@@ -18,7 +18,7 @@ public class coins : MonoBehaviour
         {
             if (other.GetComponent<move>().MovesBased)
             {
-                //GameManager.Fill with <<moves>> variable += 5f;
+                GameManager.moveNum += 5;
             }
             if (other.GetComponent<move>().TimeBased)
             {
