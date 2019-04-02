@@ -2,21 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
-public class NormalMenu : MonoBehaviour
+public class TimeMenu : MonoBehaviour
 {
-
-
     public Button lvl2, lvl3, lvl4, lvl5, lvl6, lvl7;
     int levelPassed;
-    
-    
+
+
 
     void Start()
     {
-        
-        levelPassed = PlayerPrefs.GetInt("levelpassed");
+
+        levelPassed = PlayerPrefs.GetInt("timelevelpassed");
         Debug.Log(levelPassed);
         lvl2.interactable = false;
         lvl3.interactable = false;
@@ -27,7 +24,7 @@ public class NormalMenu : MonoBehaviour
 
 
 
-        
+
     }
 
 
@@ -81,9 +78,9 @@ public class NormalMenu : MonoBehaviour
 
     public void Reset()
     {
-        
-        PlayerPrefs.SetInt("levelpassed", 0);
-        levelPassed = PlayerPrefs.GetInt("levelpassed");
+
+        PlayerPrefs.SetInt("timelevelpassed", 0);
+        levelPassed = PlayerPrefs.GetInt("timelevelpassed");
         lvl2.interactable = false;
         lvl3.interactable = false;
         lvl4.interactable = false;

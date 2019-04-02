@@ -3,36 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Saves : MonoBehaviour
+public class TimeSaves : MonoBehaviour
 {
-
     int sceneIndex;
     int levelPassed;
-   
+
     void Start()
     {
 
 
 
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
-        levelPassed = PlayerPrefs.GetInt("levelpassed");
+        levelPassed = PlayerPrefs.GetInt("timelevelpassed");
 
         Debug.Log(sceneIndex);
-       
+
         Debug.Log(levelPassed);
 
-        
-        
+        Win();
+
     }
 
     public void Win()
     {
-        
-        
-        PlayerPrefs.SetInt("levelpassed", sceneIndex);
-        
-        
-    }
 
+
+        PlayerPrefs.SetInt("timelevelpassed", sceneIndex - 12);
+
+
+    }
 
 }

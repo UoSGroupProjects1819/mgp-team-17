@@ -13,7 +13,7 @@ public class LoadNextLevel : MonoBehaviour
         if (other.gameObject.tag=="Player")
         {
 
-            
+            PlayerPrefs.SetInt("levelpassed", SceneManager.GetActiveScene().buildIndex-3);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
