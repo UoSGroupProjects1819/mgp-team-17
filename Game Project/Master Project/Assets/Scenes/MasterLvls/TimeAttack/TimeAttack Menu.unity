@@ -1181,7 +1181,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Get these too progress through levels
+  m_Text: Get these to progress through levels
 --- !u!222 &638748513
 CanvasRenderer:
   m_ObjectHideFlags: 0
