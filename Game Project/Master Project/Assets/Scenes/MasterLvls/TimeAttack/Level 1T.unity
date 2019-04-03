@@ -1018,11 +1018,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5812543235161630538, guid: 4244ec7dde000904dbb6cec4bdb61d68,
-        type: 3}
-      propertyPath: fadeVar
-      value: 0.04
-      objectReference: {fileID: 0}
     - target: {fileID: 5812543235161630536, guid: 4244ec7dde000904dbb6cec4bdb61d68,
         type: 3}
       propertyPath: m_SortingOrder
@@ -1032,6 +1027,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812543235161630538, guid: 4244ec7dde000904dbb6cec4bdb61d68,
+        type: 3}
+      propertyPath: fadeVar
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 1272697671, guid: 4244ec7dde000904dbb6cec4bdb61d68, type: 3}
       propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
@@ -2327,7 +2327,7 @@ PrefabInstance:
     - target: {fileID: 2137678382, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
       propertyPath: key
       value: 
-      objectReference: {fileID: 2017744427, guid: 21b6a4d48cbb0854190db64b2be878b4,
+      objectReference: {fileID: 2017744427, guid: 12af1db9e6e9d3844947b35852dec21c,
         type: 3}
     - target: {fileID: 2137678382, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
       propertyPath: NextLevelDoorCoords.x
@@ -2877,7 +2877,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1396741985
 PrefabInstance:

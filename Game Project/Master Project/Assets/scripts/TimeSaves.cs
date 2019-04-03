@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TimeSaves : MonoBehaviour
 {
+
     int sceneIndex;
     int levelPassed;
 
@@ -20,7 +21,7 @@ public class TimeSaves : MonoBehaviour
 
         Debug.Log(levelPassed);
 
-        Win();
+
 
     }
 
@@ -28,9 +29,10 @@ public class TimeSaves : MonoBehaviour
     {
 
 
-        PlayerPrefs.SetInt("timelevelpassed", sceneIndex - 12);
+        PlayerPrefs.SetInt("timelevelpassed", sceneIndex);
 
 
     }
+
 
 }

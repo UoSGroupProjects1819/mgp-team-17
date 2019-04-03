@@ -1252,6 +1252,11 @@ PrefabInstance:
       propertyPath: wallToDestroy
       value: 
       objectReference: {fileID: 2117931119}
+    - target: {fileID: 2137678382, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 2017744427, guid: 12af1db9e6e9d3844947b35852dec21c,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0a2fdf59045a7c4ea22adfbfed17f06, type: 3}
 --- !u!1001 &642857042
