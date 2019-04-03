@@ -103,4 +103,8 @@ public void LoadLevel5()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
+public void LoadLevel1TT()
+{
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 10);
+}
 }
