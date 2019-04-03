@@ -48,33 +48,33 @@ public class Mainmenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 18);
     }
     public void LoadLevel1()
-{
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 15);
-}
-public void LoadLevel2()
-{
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 14);
-}
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 15);
+    }
+    public void LoadLevel2()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 14);
+    }
     public void LoadLevel3()
-{
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 13);
-}
- public void LoadLevel4()
-{
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 12);
-}
-public void LoadLevel5()
-{
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 11);
-}
- public void LoadLevel6()
-{
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 10);
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 13);
+    }
+    public void LoadLevel4()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 12);
+    }
+    public void LoadLevel5()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 11);
+    }
+    public void LoadLevel6()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 10);
 
-} public void LoadLevel7()
-{
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 9);
-}
+    } public void LoadLevel7()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 9);
+    }
     public void LoadLevel1T()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 8);
@@ -103,8 +103,12 @@ public void LoadLevel5()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
-public void LoadLevel1TT()
-{
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 10);
+    public void LoadLevel1TT()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 10);
+    }
+    public void LoadMenu()
+    { 
+     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 19);
 }
 }
