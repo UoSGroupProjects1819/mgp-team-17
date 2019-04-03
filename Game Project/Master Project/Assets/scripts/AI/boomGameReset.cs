@@ -22,9 +22,10 @@ public class boomGameReset : MonoBehaviour
     {
         if (other.gameObject.tag=="Player")
         {
-            Debug.Log("sds");
+
+
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            Debug.Log("sds");
+
 
 
         }

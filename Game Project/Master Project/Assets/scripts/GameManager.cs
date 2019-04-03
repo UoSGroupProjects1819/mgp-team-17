@@ -65,6 +65,7 @@ public class GameManager : MonoBehaviour
         SetMovesText();
         if (timeLeft < 0)
         {
+
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             timeLeft = newtimeleft;
         }
@@ -114,6 +115,7 @@ public class GameManager : MonoBehaviour
         
         if (endtime < 0)
         {
+            
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
@@ -123,7 +125,9 @@ public class GameManager : MonoBehaviour
         uitime -= Time.deltaTime;
         if (uitime < 0)
         {
+            
             OutOfMovesScreen.SetActive(true);
+            
         }
         
     }
