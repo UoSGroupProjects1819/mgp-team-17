@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 public class Mainmenu : MonoBehaviour
 {
 
-    public void Tutorial()
+    public void LoadNormalMenu()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-    public void Level1()
+    public void TimeAttackMenu()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
