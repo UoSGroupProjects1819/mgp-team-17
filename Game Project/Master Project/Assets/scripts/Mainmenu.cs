@@ -27,6 +27,10 @@ public class Mainmenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
+    public void Quit2()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+    }
     public void Level4()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);
@@ -63,6 +67,10 @@ public class Mainmenu : MonoBehaviour
     public void LevelSelectionN()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 25);
+    }
+    public void Backto1()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 25);
     }
     public void backspaceN()
     {
