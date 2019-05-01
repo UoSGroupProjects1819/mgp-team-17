@@ -48,7 +48,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MasterLvls/NormalMode/Level 9.unity
     guid: 8dcc30bd8b72cd94a8080def4827d00f
   - enabled: 1
-    path: Assets/Scenes/MasterLvls/NormalMode/Level 10.unity
+    path: Assets/Scenes/MasterLvls/NormalMode/END.unity
     guid: efb4b199bdd432a4c8ae8909cb3dfb7b
   - enabled: 1
     path: Assets/Scenes/MasterLvls/NormalMode/End of GameN.unity
@@ -81,7 +81,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MasterLvls/TimeAttack/Level 9T.unity
     guid: 71f225f85714e1f4e95a121d5da7129d
   - enabled: 1
-    path: Assets/Scenes/MasterLvls/TimeAttack/Level10T.unity
+    path: Assets/Scenes/MasterLvls/TimeAttack/End.unity
     guid: c5cbca13cb88aac4dac4dea42760b72d
   - enabled: 1
     path: Assets/Scenes/MasterLvls/TimeAttack/EndOfGameT.unity
@@ -90,6 +90,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MasterLvls/TimeAttack/LevelSelection TimeAttack.unity
     guid: 445ebdb8fe0767140b2a32c152f1b06f
   - enabled: 1
-    path: Assets/Scenes/MasterLvls/Options Menu.unity
+    path: Assets/Scenes/MasterLvls/Controls.unity
     guid: 4551b1c4092e3d646b7aaadfb9391d48
+  - enabled: 1
+    path: Assets/Scenes/MasterLvls/ControlsT.unity
+    guid: 4c62cb1759f47ab45bd45358cbc6450f
   m_configObjects: {}
