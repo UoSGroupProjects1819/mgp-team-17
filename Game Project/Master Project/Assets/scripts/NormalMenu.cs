@@ -36,30 +36,29 @@ public class NormalMenu : MonoBehaviour
 
     public void Update()
     {
-
-
-
-        if (levelPassed == 1)
+        if(levelPassed == 2)
         {
-            lvl2.interactable = true;
+            if (lvl2.interactable == false)
+            {
+                levelPassed = 1;
+            }
         }
-        else if (levelPassed == 2)
+
+
+        if (levelPassed == 2)
         {
             lvl2.interactable = true;
-            lvl3.interactable = true;
         }
         else if (levelPassed == 3)
         {
             lvl2.interactable = true;
             lvl3.interactable = true;
-            lvl4.interactable = true;
         }
         else if (levelPassed == 4)
         {
             lvl2.interactable = true;
             lvl3.interactable = true;
             lvl4.interactable = true;
-            lvl5.interactable = true;
         }
         else if (levelPassed == 5)
         {
@@ -67,9 +66,16 @@ public class NormalMenu : MonoBehaviour
             lvl3.interactable = true;
             lvl4.interactable = true;
             lvl5.interactable = true;
+        }
+        else if (levelPassed == 6)
+        {
+            lvl2.interactable = true;
+            lvl3.interactable = true;
+            lvl4.interactable = true;
+            lvl5.interactable = true;
             lvl6.interactable = true;
         }
-        else if (levelPassed >= 6)
+        else if (levelPassed == 7)
         {
             lvl2.interactable = true;
             lvl3.interactable = true;
@@ -78,7 +84,7 @@ public class NormalMenu : MonoBehaviour
             lvl6.interactable = true;
             lvl7.interactable = true;
         }
-        else if (levelPassed >= 7)
+        else if (levelPassed == 8)
         {
             lvl2.interactable = true;
             lvl3.interactable = true;
@@ -88,7 +94,7 @@ public class NormalMenu : MonoBehaviour
             lvl7.interactable = true;
             lvl8.interactable = true;
         }
-        else if (levelPassed >= 8)
+        else if (levelPassed == 9)
         {
             lvl2.interactable = true;
             lvl3.interactable = true;
@@ -99,7 +105,7 @@ public class NormalMenu : MonoBehaviour
             lvl8.interactable = true;
             lvl9.interactable = true;
         }
-        else if (levelPassed >= 9)
+        else if (levelPassed == 10)
         {
             lvl2.interactable = true;
             lvl3.interactable = true;

@@ -13,7 +13,7 @@ public class LoadNextLvlTime : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
 
-            PlayerPrefs.SetInt("timelevelpassed", SceneManager.GetActiveScene().buildIndex - 11);
+            PlayerPrefs.SetInt("timelevelpassed", SceneManager.GetActiveScene().buildIndex - 16);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
