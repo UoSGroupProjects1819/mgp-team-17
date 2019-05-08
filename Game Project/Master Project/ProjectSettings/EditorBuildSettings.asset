@@ -81,6 +81,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MasterLvls/TimeAttack/Level 9T.unity
     guid: 71f225f85714e1f4e95a121d5da7129d
   - enabled: 1
+    path: Assets/Scenes/MasterLvls/TimeAttack/END 1.unity
+    guid: 686e02094dab7f540913a016db6eed49
+  - enabled: 0
     path: Assets/Scenes/MasterLvls/TimeAttack/End.unity
     guid: c5cbca13cb88aac4dac4dea42760b72d
   - enabled: 1
