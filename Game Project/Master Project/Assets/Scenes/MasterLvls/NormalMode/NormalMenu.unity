@@ -991,8 +991,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 626475217}
-        m_MethodName: OptionsM
+      - m_Target: {fileID: 626475218}
+        m_MethodName: PauseScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1053,7 +1053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc21e50f08520a46bbc2d24d747c848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseMenuUI: {fileID: 0}
+  PauseMenuUI: {fileID: 774335123}
 --- !u!1 &497296579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,6 +1461,7 @@ GameObject:
   - component: {fileID: 626475212}
   - component: {fileID: 626475216}
   - component: {fileID: 626475217}
+  - component: {fileID: 626475218}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1581,6 +1582,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc64386a40237e745b465086ece32244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &626475218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626475211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbc21e50f08520a46bbc2d24d747c848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseMenuUI: {fileID: 774335123}
 --- !u!1 &664362952
 GameObject:
   m_ObjectHideFlags: 0
