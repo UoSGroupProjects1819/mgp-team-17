@@ -89,10 +89,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MasterLvls/TimeAttack/LevelSelection TimeAttack.unity
     guid: 445ebdb8fe0767140b2a32c152f1b06f
-  - enabled: 1
-    path: Assets/Scenes/MasterLvls/Controls.unity
-    guid: 4551b1c4092e3d646b7aaadfb9391d48
-  - enabled: 1
-    path: Assets/Scenes/MasterLvls/ControlsT.unity
-    guid: 4c62cb1759f47ab45bd45358cbc6450f
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

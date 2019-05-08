@@ -2,12 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class quit : MonoBehaviour
 {
-   
-   public  void quit()
+   public void quitt()
     {
         Application.Quit();
-
     }
 }
